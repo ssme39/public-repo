@@ -1,0 +1,6 @@
+This is the initial line.
+This is the second line;
+"And - yes; this 3rd line,  contains special characters."
+""
+This is the first line of the second section.
+This is the second line of the second section.
