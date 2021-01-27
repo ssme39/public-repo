@@ -1,6 +1,0 @@
-T,h,i,s, , ,i,s, , ,t,h,e, , ,i,n,i,t,i,a,l, , ,l,i,n,e,., 
-T,h,i,s, , ,i,s, , ,t,h,e, , ,s,e,c,o,n,d, , ,l,i,n,e,;
-A,n,d,-, ,y,e,s,;, ,t,h,i,s, , ,3,r,d, , ,l,i,n,e,",", ,c,o,n,t,a,i,n,s, , ,s,p,e,c,i,a,l, , ,c,h,a,r,a,c,t,e,r,s,.
- 
-T,h,i,s, , ,i,s, , ,t,h,e, , ,f,i,r,s,t, , ,l,i,n,e, , ,o,f, , ,t,h,e, , ,s,e,c,o,n,d, , ,s,e,c,t,i,o,n,.
-T,h,i,s, , ,i,s, , ,t,h,e, , ,s,e,c,o,n,d, , ,l,i,n,e, , ,o,f, , ,t,h,e, , ,s,e,c,o,n,d, , ,s,e,c,t,i,o,n,.
