@@ -1,6 +1,0 @@
-This is the initial line.
-This is the second line;
-And-yes;this 
- 
-This is the first line of the second section.
-This is the second line of the second section.
