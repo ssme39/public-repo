@@ -1,0 +1,25 @@
+Use	Tense	Root	I	YOU (singular)	HE/SHE/IT	WE	YOU (plural)	THEY
+No trailing "e"	Present	accept	accept	accept	acceptes	accept	accept	accept
+No trailing "e"	Past	accept	accepted	accepted	accepted	accepted	accepted	accepted
+No trailing "e"	Future	accept	will accept	will accept	will accept	will accept	will accept	will accept
+No trailing "e"	Present conditional	accept	would accept	would accept	would accept	would accept	would accept	would accept
+No trailing "e"	Past conditional	accept	would have accepted	would have accepted	would have accepted	would have accepted	would have accepted	would have accepted
+No trailing "e"	Present Perfect	accept	have accepted	have accepted	has accepted	have accepted	have accepted	have accepted
+No trailing "e"	Past Perfect	accept	had accepted	had accepted	had accepted	had accepted	had accepted	had accepted
+No trailing "e"	Future Perfect	accept	will have accepted	will have accepted	will have accepted	will have accepted	will have accepted	will have accepted
+Trailing "e"	Present	accuse	accuse	accuse	accuses	accuse	accuse	accuse
+Trailing "e"	Past	accuse	accused	accused	accused	accused	accused	accused
+Trailing "e"	Future	accuse	will accuse	will accuse	will accuse	will accuse	will accuse	will accuse
+Trailing "e"	Present conditional	accuse	would accuse	would accuse	would accuse	would accuse	would accuse	would accuse
+Trailing "e"	Past conditional	accuse	would have accused	would have accused	would have accused	would have accused	would have accused	would have accused
+Trailing "e"	Present Perfect	accuse	have accused	have accused	has accused	have accused	have accused	have accused
+Trailing "e"	Past Perfect	accuse	had accused	had accused	had accused	had accused	had accused	had accused
+Trailing "e"	Future Perfect	accuse	will have accused	will have accused	will have accused	will have accused	will have accused	will have accused
+Special Case "be"	Present	be	am	are	is	are	are	are
+Special Case "be"	Past	be	was	were	was	were	were	were
+Special Case "be"	Future	be	will be	will be	will be	will be	will be	will be
+Special Case "be"	Present conditional	be	would be	would be	would be	would be	would be	would be
+Special Case "be"	Past conditional	be	would have been	would have been	would have been	would have been	would have been	would have been
+Special Case "be"	Present Perfect	be	have been	have been	have been	have been	have been	have been
+Special Case "be"	Past Perfect	be	had been	had been	had been	had been	had been	had been
+Special Case "be"	Future Perfect	be	will have been	will have been	will have been	would have been	will have been	will have been
