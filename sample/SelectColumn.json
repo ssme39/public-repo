@@ -1,5 +1,6 @@
 {
   "apply_to_all_columns": {
+    hello:-:hello
     "type": "checkbox", 
     "label": "Alle Säulen", 
     "val": "false", 
