@@ -1,1 +1,1 @@
-{  "debug": {    "type": "debug"  }}
+{  "DEBUG": {    "type": "DEBUG"  }}
