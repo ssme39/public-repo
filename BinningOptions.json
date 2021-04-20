@@ -1,61 +1,61 @@
-
-        "options": {
-          "asc": {{
+{
   "options": {
-    "type": "fieldset", 
-    "label": "选择分箱选项", 
-    "repeat": false, 
+    "type": "fieldset",
+    "label": "Select Binning Options",
+    "repeat": false,
     "fields": {
       "number_of_tiles": {
-        "type": "text", 
-        "label": "分箱数", 
-        "val": "2", 
-        "required": true, 
+        "type": "text",
+        "label": "Number of Bins",
+        "val": "2",
+        "required": true,
         "breakLine": true
-      }, 
+      },
       "binning_type": {
-        "type": "select", 
-        "label": "分箱类型", 
+        "type": "select",
+        "label": "Binning Type",
         "options": {
           "equal_records": {
-            "label": "简单分箱"
-          }, 
+            "label": "Simple Binning"
+          },
           "equal_intervals": {
-            "label": "等间隔分箱"
+            "label": "Equal Interval Binning"
           }
-        }, 
+        },
         "val": "equal_records"
-      }, 
+      },
       "equal_records_order": {
-        "type": "select", 
-        "label": "顺序", 
-        "show_if": "binning_type=='equal_records'", 
+        "type": "select",
+        "label": "Order",
+        "show_if": "binning_type==''equal_records''",
         "options": {
           "keep_current": {
-            "label": "保持现有"
-          }, 
+            "label": "Keep Current"
+          },
           "asc": {
-            "label": "升序"
-          }, 
+            "label": "Ascending"
+          },
           "desc": {
-            "label": "降序"
+            "label": "Descending"
           }
-        }, 
+        },
         "val": "keep_current"
-      }, 
+      },
       "equal_intervals_order": {
-        "type": "select", 
-        "label": "顺序", 
-        "show_if": "binning_type=='equal_intervals'", 
-            "label": "升序"
-          }, 
+        "type": "select",
+        "label": "Order",
+        "show_if": "binning_type==''equal_intervals''",
+        "options": {
+          "asc": {
+            "label": "Ascending"
+          },
           "desc": {
-            "label": "降序"
+            "label": "Descending"
           }
-        }, 
+        },
         "val": "asc"
       }
-    }, 
+    },
     "breakLine": true
   }
 }
