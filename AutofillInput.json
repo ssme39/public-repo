@@ -1,88 +1,88 @@
 {
   "input": {
-    "type": "fieldset", 
-    "label": "选择输入表格", 
-    "repeat": false, 
+    "type": "fieldset",
+    "label": "Select Input Table",
+    "repeat": false,
     "fields": {
       "tables": {
-        "type": "fieldset", 
-        "label": "选择表格", 
-        "repeat": true, 
+        "type": "fieldset",
+        "label": "Select Tables",
+        "repeat": true,
         "fields": {
           "table_id": {
-            "type": "select", 
-            "label": "查找表格", 
-            "bind": "TABLES", 
+            "type": "select",
+            "label": "Lookup Table",
+            "bind": "TABLES",
             "required": true
-          }, 
+          },
           "lookup_header_column": {
-            "type": "select", 
-            "label": "标题列", 
-            "table": "this.table_id", 
-            "bind": "COLUMNS", 
+            "type": "select",
+            "label": "Header Column",
+            "table": "this.table_id",
+            "bind": "COLUMNS",
             "required": true
-          }, 
+          },
           "lookup_value_column": {
-            "type": "select", 
-            "label": "值列", 
-            "table": "this.table_id", 
-            "bind": "COLUMNS", 
+            "type": "select",
+            "label": "Value Column",
+            "table": "this.table_id",
+            "bind": "COLUMNS",
             "required": true
-          }, 
+          },
           "lookup_mapping_column": {
-            "type": "select", 
-            "label": "映射列", 
-            "table": "this.table_id", 
+            "type": "select",
+            "label": "Mapping Column",
+            "table": "this.table_id",
             "bind": "COLUMNS"
-          }, 
+          },
           "delete": {
-            "type": "button", 
-            "label": "删除", 
+            "type": "button",
+            "label": "Delete",
             "function": "DELETE_ROW"
           }
         }
-      }, 
+      },
       "options.treatment": {
-        "type": "select", 
-        "label": "多次出现处理方式", 
-        "required": true, 
+        "type": "select",
+        "label": "Treatment of multiple occurances",
+        "required": true,
         "options": {
           "sum": {
-            "label": "总和"
-          }, 
+            "label": "Sum"
+          },
           "min": {
-            "label": "最小"
-          }, 
+            "label": "Min"
+          },
           "max": {
-            "label": "最大"
-          }, 
+            "label": "Max"
+          },
           "shortest": {
-            "label": "最短"
-          }, 
+            "label": "Shortest"
+          },
           "longest": {
-            "label": "最长"
-          }, 
+            "label": "Longest"
+          },
           "first": {
-            "label": "首行"
-          }, 
+            "label": "First"
+          },
           "last": {
-            "label": "后"
-          }, 
+            "label": "Last"
+          },
           "concatenate": {
-            "label": "连接"
+            "label": "Concatenate"
           }
-        }, 
-        "val": "sum", 
+        },
+        "val": "sum",
         "style": "min-width: 200px"
-      }, 
+      },
       "options.treatment_delimiter": {
-        "type": "text", 
-        "label": "分隔符", 
-        "show_if": "options.treatment=='concatenate'", 
-        "required": true, 
-        "minLength": 1, 
-        "maxLength": 255, 
-        "val": ";", 
+        "type": "text",
+        "label": "Delimiter",
+        "show_if": "options.treatment==''concatenate''",
+        "required": true,
+        "minLength": 1,
+        "maxLength": 255,
+        "val": ";",
         "breakLine": true
       }
     }
