@@ -1,121 +1,121 @@
 
-        "type": "fieldset", 
-        "label": "选择模式", {
+}{
   "options": {
-    "type": "fieldset", 
-    "label": "选项", 
-    "repeat": false, 
+    "type": "fieldset",
+    "label": "Options",
+    "repeat": false,
     "fields": {
       "compare_set": {
-        "repeat": true, 
+        "type": "fieldset",
+        "label": "Select Patterns",
+        "repeat": true,
         "fields": {
           "pattern": {
-            "type": "select", 
-            "label": "表格模式类型", 
+            "type": "select",
+            "label": "Table Pattern Type",
             "options": {
               "all_col": {
-                "label": "所有列标识"
-              }, 
+                "label": "All column identity"
+              },
               "two_col": {
-                "label": "两列标识"
+                "label": "Two column identity"
               }
-            }, 
-            "val": "all_col", 
+            },
+            "val": "all_col",
             "required": true
-          }, 
+          },
           "compare_type": {
-            "type": "select", 
-            "label": "单元格模式类型", 
+            "type": "select",
+            "label": "Cell Pattern Type",
             "options": {
               "equal": {
-                "label": "相等"
-              }, 
+                "label": "Equal"
+              },
               "contain": {
-                "label": "包含"
-              }, 
+                "label": "Contains"
+              },
               "start_with": {
-                "label": "开始于"
-              }, 
+                "label": "Starts With"
+              },
               "end_with": {
-                "label": "结尾是"
-              }, 
+                "label": "Ends With"
+              },
               "reg_exp": {
-                "label": "正则表达式"
+                "label": "Regular Expression"
               }
-            }, 
-            "val": "equal", 
+            },
+            "val": "equal",
             "required": true
-          }, 
+          },
           "case_sensitive": {
-            "type": "select", 
-            "label": "区分大小写", 
-            "required": true, 
+            "type": "select",
+            "label": "Case Sensitivity",
+            "required": true,
             "options": {
               "yes": {
-                "label": "区分大小写"
-              }, 
+                "label": "Case Sensitive"
+              },
               "no": {
-                "label": "不区分大小写"
+                "label": "Case Insensitive"
               }
-            }, 
+            },
             "val": "no"
-          }, 
+          },
           "expression": {
-            "type": "text", 
-            "label": "表达式", 
-            "show_if": "this.compare_type != 'equal'", 
-            "required": true, 
+            "type": "text",
+            "label": "Expression",
+            "show_if": "this.compare_type != ''equal''",
+            "required": true,
             "val": ""
-          }, 
+          },
           "delete": {
-            "show_if": "this.field_name != ''", 
-            "type": "button", 
-            "label": "删除", 
+            "show_if": "this.field_name != ''''",
+            "type": "button",
+            "label": "Delete",
             "function": "DELETE_ROW"
           }
-        }, 
+        },
         "breakLine": true
-      }, 
+      },
       "target": {
-        "type": "select", 
-        "label": "目标", 
+        "type": "select",
+        "label": "Target",
         "options": {
           "to_table": {
-            "label": "应用至表格"
-          }, 
+            "label": "Apply to table"
+          },
           "to_rows": {
-            "label": "逐行"
+            "label": "Row by Row"
           }
-        }, 
-        "val": "to_table", 
+        },
+        "val": "to_table",
         "required": true
-      }, 
+      },
       "match_type": {
-        "type": "select", 
-        "show_if": "target != 'to_table'", 
-        "label": "匹配类型", 
+        "type": "select",
+        "show_if": "target != ''to_table''",
+        "label": "Match Type",
         "options": {
           "match": {
-            "label": "仅匹配"
-          }, 
+            "label": "Matches Only"
+          },
           "nonmatch": {
-            "label": "仅非匹配"
-          }, 
+            "label": "Non Matches Only"
+          },
           "all": {
-            "label": "所有"
+            "label": "All"
           }
-        }, 
-        "val": "match", 
-        "required": true, 
+        },
+        "val": "match",
+        "required": true,
         "breakLine": true
-      }, 
+      },
       "create_sql": {
-        "type": "checkbox", 
-        "label": "显示 SQL-详细信息", 
-        "val": "false", 
-        "isOn": "true", 
+        "type": "checkbox",
+        "label": "Show SQL-Details",
+        "val": "false",
+        "isOn": "true",
         "isOff": "false"
       }
     }
   }
-}
