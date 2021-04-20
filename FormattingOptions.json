@@ -1,301 +1,301 @@
 {
   "options": {
-    "type": "fieldset", 
-    "label": "选项", 
-    "repeat": false, 
+    "type": "fieldset",
+    "label": "Options",
+    "repeat": false,
     "fields": {
       "reformat_columns": {
-        "type": "checkbox", 
-        "label": "格式化列", 
-        "val": "false", 
-        "isOn": "true", 
+        "type": "checkbox",
+        "label": "Formatting Columns",
+        "val": "false",
+        "isOn": "true",
         "isOff": "false"
-      }, 
+      },
       "columns": {
-        "type": "fieldset", 
-        "label": "选择列", 
-        "show_if": "reformat_columns=='true'", 
-        "repeat": true, 
+        "type": "fieldset",
+        "label": "Select Columns",
+        "show_if": "reformat_columns==''true''",
+        "repeat": true,
         "fields": {
           "field_name": {
-            "type": "select", 
-            "label": "选择列", 
-            "table": "input_table", 
-            "bind": "COLUMNS", 
+            "type": "select",
+            "label": "Select Column",
+            "table": "input_table",
+            "bind": "COLUMNS",
             "required": true
-          }, 
+          },
           "format__category": {
-            "type": "select", 
-            "label": "格式", 
-            "required": true, 
+            "type": "select",
+            "label": "Format",
+            "required": true,
             "options": {
               "standard": {
-                "label": "标准"
-              }, 
+                "label": "Standard"
+              },
               "number": {
-                "label": "数字"
-              }, 
+                "label": "Number"
+              },
               "percentage": {
-                "label": "百分比"
-              }, 
+                "label": "Percentage"
+              },
               "text": {
-                "label": "文本"
-              }, 
+                "label": "Text"
+              },
               "date": {
-                "label": "日期"
-              }, 
+                "label": "Date"
+              },
               "currency": {
-                "label": "货币"
+                "label": "Currency"
               }
-            }, 
+            },
             "val": "standard"
-          }, 
+          },
           "format__rounding": {
-            "type": "select", 
-            "label": "取整", 
-            "show_if": "this.format__category=='number' || this.format__category=='percentage' || this.format__category=='currency'", 
-            "required": true, 
+            "type": "select",
+            "label": "Rounding",
+            "show_if": "this.format__category==''number'' || this.format__category==''percentage'' || this.format__category==''currency''",
+            "required": true,
             "options": {
               "no_rounding": {
-                "label": "不取整"
-              }, 
+                "label": "No rounding"
+              },
               "0": {
-                "label": "0 位数"
-              }, 
+                "label": "0 digits"
+              },
               "1": {
-                "label": "1 位数"
-              }, 
+                "label": "1 digits"
+              },
               "2": {
-                "label": "2 位数"
-              }, 
+                "label": "2 digits"
+              },
               "3": {
-                "label": "3 位数"
-              }, 
+                "label": "3 digits"
+              },
               "4": {
-                "label": "4 位数"
-              }, 
+                "label": "4 digits"
+              },
               "5": {
-                "label": "5 位数"
-              }, 
+                "label": "5 digits"
+              },
               "6": {
-                "label": "6 位数"
-              }, 
+                "label": "6 digits"
+              },
               "7": {
-                "label": "7 位数"
-              }, 
+                "label": "7 digits"
+              },
               "8": {
-                "label": "8 位数"
-              }, 
+                "label": "8 digits"
+              },
               "9": {
-                "label": "9 位数"
+                "label": "9 digits"
               }
-            }, 
+            },
             "val": "2"
-          }, 
+          },
           "format__use_1000_separator": {
-            "type": "checkbox", 
-            "label": "使用 1000 分隔符（.）", 
-            "show_if": "this.format__category=='number' || this.format__category=='percentage' || this.format__category=='currency'", 
-            "val": "true", 
-            "isOn": "true", 
+            "type": "checkbox",
+            "label": "Use 1000 Separator(.)",
+            "show_if": "this.format__category==''number'' || this.format__category==''percentage'' || this.format__category==''currency''",
+            "val": "true",
+            "isOn": "true",
             "isOff": "false"
-          }, 
+          },
           "format__currency_symbol": {
-            "type": "select", 
-            "label": "符号", 
-            "show_if": "this.format__category=='currency'", 
-            "required": true, 
+            "type": "select",
+            "label": "Symbol",
+            "show_if": "this.format__category==''currency''",
+            "required": true,
             "options": {
               "dollar": {
                 "label": "$"
-              }, 
+              },
               "euro": {
                 "label": "€"
-              }, 
+              },
               "pound": {
                 "label": "£"
               }
-            }, 
+            },
             "val": "dollar"
-          }, 
+          },
           "format__date_format": {
-            "type": "select", 
-            "label": "类型", 
-            "show_if": "this.format__category=='date'", 
-            "required": true, 
+            "type": "select",
+            "label": "Type",
+            "show_if": "this.format__category==''date''",
+            "required": true,
             "options": {
               "mm/dd/yyyy": {
                 "label": "3/14/2012"
-              }, 
-              "D,  M dd,  Y": {
-                "label": "星期三，3 月 14 日，2012"
-              }, 
+              },
+              "D, M dd, Y": {
+                "label": "Wednesday, March 14, 2012"
+              },
               "yyyy-mm-dd": {
                 "label": "2012-03-14"
               }
-            }, 
-            "val": "mm/dd/yyyy", 
+            },
+            "val": "mm/dd/yyyy",
             "breakLine": true
-          }, 
+          },
           "delete": {
-            "show_if": "this.field_name != ''", 
-            "type": "button", 
-            "label": "删除", 
+            "show_if": "this.field_name != ''''",
+            "type": "button",
+            "label": "Delete",
             "function": "DELETE_ROW"
           }
-        }, 
+        },
         "breakLine": true
-      }, 
+      },
       "reformat_rows": {
-        "type": "checkbox", 
-        "label": "格式化标签", 
-        "val": "false", 
-        "isOn": "true", 
-        "isOff": "false", 
+        "type": "checkbox",
+        "label": "Formatting Labels",
+        "val": "false",
+        "isOn": "true",
+        "isOff": "false",
         "style": "margin-top: 10px"
-      }, 
+      },
       "rows": {
-        "type": "fieldset", 
-        "label": "选择标签", 
-        "show_if": "reformat_rows=='true'", 
-        "repeat": true, 
+        "type": "fieldset",
+        "label": "Select Labels",
+        "show_if": "reformat_rows==''true''",
+        "repeat": true,
         "fields": {
           "label_name": {
-            "type": "select", 
-            "label": "选择标签", 
-            "table": "input_table", 
-            "bind": "LABELS", 
+            "type": "select",
+            "label": "Select Label",
+            "table": "input_table",
+            "bind": "LABELS",
             "required": true
-          }, 
+          },
           "format__category": {
-            "type": "select", 
-            "label": "格式", 
-            "required": true, 
+            "type": "select",
+            "label": "Format",
+            "required": true,
             "options": {
               "standard": {
-                "label": "标准"
-              }, 
+                "label": "Standard"
+              },
               "number": {
-                "label": "数字"
-              }, 
+                "label": "Number"
+              },
               "percentage": {
-                "label": "百分比"
-              }, 
+                "label": "Percentage"
+              },
               "text": {
-                "label": "文本"
-              }, 
+                "label": "Text"
+              },
               "date": {
-                "label": "日期"
-              }, 
+                "label": "Date"
+              },
               "currency": {
-                "label": "货币"
+                "label": "Currency"
               }
-            }, 
+            },
             "val": "standard"
-          }, 
+          },
           "format__rounding": {
-            "type": "select", 
-            "label": "取整", 
-            "show_if": "this.format__category=='number' || this.format__category=='percentage' || this.format__category=='currency'", 
-            "required": true, 
+            "type": "select",
+            "label": "Rounding",
+            "show_if": "this.format__category==''number'' || this.format__category==''percentage'' || this.format__category==''currency''",
+            "required": true,
             "options": {
               "no_rounding": {
-                "label": "不取整"
-              }, 
+                "label": "No rounding"
+              },
               "0": {
-                "label": "0 位数"
-              }, 
+                "label": "0 digits"
+              },
               "1": {
-                "label": "1 位数"
-              }, 
+                "label": "1 digits"
+              },
               "2": {
-                "label": "2 位数"
-              }, 
+                "label": "2 digits"
+              },
               "3": {
-                "label": "3 位数"
-              }, 
+                "label": "3 digits"
+              },
               "4": {
-                "label": "4 位数"
-              }, 
+                "label": "4 digits"
+              },
               "5": {
-                "label": "5 位数"
-              }, 
+                "label": "5 digits"
+              },
               "6": {
-                "label": "6 位数"
-              }, 
+                "label": "6 digits"
+              },
               "7": {
-                "label": "7 位数"
-              }, 
+                "label": "7 digits"
+              },
               "8": {
-                "label": "8 位数"
-              }, 
+                "label": "8 digits"
+              },
               "9": {
-                "label": "9 位数"
+                "label": "9 digits"
               }
-            }, 
+            },
             "val": "2"
-          }, 
+          },
           "format__use_1000_separator": {
-            "type": "checkbox", 
-            "label": "使用 1000 分隔符（.）", 
-            "show_if": "this.format__category=='number' || this.format__category=='percentage' || this.format__category=='currency'", 
-            "val": "true", 
-            "isOn": "true", 
+            "type": "checkbox",
+            "label": "Use 1000 Separator(.)",
+            "show_if": "this.format__category==''number'' || this.format__category==''percentage'' || this.format__category==''currency''",
+            "val": "true",
+            "isOn": "true",
             "isOff": "false"
-          }, 
+          },
           "format__currency_symbol": {
-            "type": "select", 
-            "label": "符号", 
-            "show_if": "this.format__category=='currency'", 
-            "required": true, 
+            "type": "select",
+            "label": "Symbol",
+            "show_if": "this.format__category==''currency''",
+            "required": true,
             "options": {
               "dollar": {
                 "label": "$"
-              }, 
+              },
               "euro": {
                 "label": "€"
-              }, 
+              },
               "pound": {
                 "label": "£"
               }
-            }, 
+            },
             "val": "dollar"
-          }, 
+          },
           "format__date_format": {
-            "type": "select", 
-            "label": "类型", 
-            "show_if": "this.format__category=='date'", 
-            "required": true, 
+            "type": "select",
+            "label": "Type",
+            "show_if": "this.format__category==''date''",
+            "required": true,
             "options": {
               "mm/dd/yyyy": {
                 "label": "3/14/2012"
-              }, 
-              "D,  M dd,  Y": {
-                "label": "星期三，3 月 14 日，2012"
-              }, 
+              },
+              "D, M dd, Y": {
+                "label": "Wednesday, March 14, 2012"
+              },
               "yyyy-mm-dd": {
                 "label": "2012-03-14"
               }
-            }, 
-            "val": "mm/dd/yyyy", 
+            },
+            "val": "mm/dd/yyyy",
             "breakLine": true
-          }, 
+          },
           "delete": {
-            "show_if": "this.label_name != ''", 
-            "type": "button", 
-            "label": "删除", 
+            "show_if": "this.label_name != ''''",
+            "type": "button",
+            "label": "Delete",
             "function": "DELETE_ROW"
           }
-        }, 
+        },
         "breakLine": true
-      }, 
+      },
       "create_new_table": {
-        "type": "checkbox", 
-        "label": "输出为新表格", 
-        "val": "true", 
-        "isOn": "true", 
-        "isOff": "false", 
-        "breakLine": true, 
+        "type": "checkbox",
+        "label": "Output as new table",
+        "val": "true",
+        "isOn": "true",
+        "isOff": "false",
+        "breakLine": true,
         "style": "margin-top: 10px"
       }
     }
