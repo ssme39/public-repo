@@ -1,6 +1,4 @@
-
-              }
-            },{
+{
   "output": {
     "type": "fieldset",
     "label": "Define Output Table",
@@ -9,7 +7,7 @@
       "output.custom_text": {
         "type": "text",
         "label": "Output Table Name",
-        "show_if": "(output.set_options==''true'' && output.compose_table_name==''false'') || output.set_options==''false''",
+        "show_if": "(output.set_options=='true' && output.compose_table_name=='false') || output.set_options=='false'",
         "minLength": 1,
         "val": "",
         "width": "100%",
@@ -18,7 +16,7 @@
       "output.select_output_columns": {
         "type": "checkbox",
         "label": "Select Output Columns",
-        "show_if": "options.is_generate_holiday_table==''add_column''",
+        "show_if": "options.is_generate_holiday_table=='add_column'",
         "val": "false",
         "isOn": "true",
         "isOff": "false"
@@ -26,7 +24,7 @@
       "output_columns": {
         "type": "fieldset",
         "label": "Select OutputColumns",
-        "show_if": "options.is_generate_holiday_table==''add_column'' && output.select_output_columns==''true''",
+        "show_if": "options.is_generate_holiday_table=='add_column' && output.select_output_columns=='true'",
         "repeat": true,
         "fields": {
           "field_name": {
@@ -60,7 +58,7 @@
             "isOff": "false"
           },
           "rename": {
-            "show_if": "this.is_rename == ''true''",
+            "show_if": "this.is_rename == 'true'",
             "type": "text",
             "required": true,
             "minLength": 1,
@@ -90,12 +88,14 @@
               },
               "currency": {
                 "label": "Currency"
+              }
+            },
             "val": "standard"
           },
           "format__rounding": {
             "type": "select",
             "label": "Rounding",
-            "show_if": "this.format__category==''number'' || this.format__category==''percentage'' || this.format__category==''currency''",
+            "show_if": "this.format__category=='number' || this.format__category=='percentage' || this.format__category=='currency'",
             "required": true,
             "options": {
               "no_rounding": {
@@ -137,7 +137,7 @@
           "format__use_1000_separator": {
             "type": "checkbox",
             "label": "Use 1000 Separator(.)",
-            "show_if": "this.format__category==''number'' || this.format__category==''percentage'' || this.format__category==''currency''",
+            "show_if": "this.format__category=='number' || this.format__category=='percentage' || this.format__category=='currency'",
             "val": "true",
             "isOn": "true",
             "isOff": "false"
@@ -145,7 +145,7 @@
           "format__currency_symbol": {
             "type": "select",
             "label": "Symbol",
-            "show_if": "this.format__category==''currency''",
+            "show_if": "this.format__category=='currency'",
             "required": true,
             "options": {
               "dollar": {
@@ -163,7 +163,7 @@
           "format__date_format": {
             "type": "select",
             "label": "Type",
-            "show_if": "this.format__category==''date''",
+            "show_if": "this.format__category=='date'",
             "required": true,
             "options": {
               "mm/dd/yyyy": {
@@ -198,7 +198,7 @@
       "output_options_box": {
         "type": "fieldset",
         "label": "Output Options",
-        "show_if": "output.set_options==''true''",
+        "show_if": "output.set_options=='true'",
         "repeat": false,
         "fields": {
           "output.compose_table_name": {
@@ -212,13 +212,13 @@
           "compose_table_name_frame": {
             "type": "fieldset",
             "label": "Compose Output Table Name",
-            "show_if": "output.compose_table_name==''true''",
+            "show_if": "output.compose_table_name=='true'",
             "repeat": false,
             "fields": {
               "output.prefix_rule": {
                 "type": "select",
                 "label": "Prefix",
-                "show_if": "output.compose_table_name==''true''",
+                "show_if": "output.compose_table_name=='true'",
                 "val": "empty",
                 "options": {
                   "empty": {
@@ -247,7 +247,7 @@
               "output.prefix_text": {
                 "type": "text",
                 "label": "Prefix Text",
-                "show_if": "output.compose_table_name==''true'' && output.prefix_rule==''custom''",
+                "show_if": "output.compose_table_name=='true' && output.prefix_rule=='custom'",
                 "minLength": 1,
                 "maxLength": 31,
                 "val": ""
@@ -255,14 +255,14 @@
               "output.core_delimiter": {
                 "type": "text",
                 "label": "Delimiter",
-                "show_if": "output.compose_table_name==''true'' && output.prefix_rule!=''empty''",
+                "show_if": "output.compose_table_name=='true' && output.prefix_rule!='empty'",
                 "val": "_",
                 "width": "50px"
               },
               "output.generate_core_rule": {
                 "type": "select",
                 "label": "Table Name",
-                "show_if": "output.compose_table_name==''true'' && options.is_generate_holiday_table==''generate_table''",
+                "show_if": "output.compose_table_name=='true' && options.is_generate_holiday_table=='generate_table'",
                 "val": "script_name",
                 "options": {
                   "script_name": {
@@ -276,7 +276,7 @@
               "output.core_rule": {
                 "type": "select",
                 "label": "Table Name",
-                "show_if": "output.compose_table_name==''true'' && options.is_generate_holiday_table==''add_column''",
+                "show_if": "output.compose_table_name=='true' && options.is_generate_holiday_table=='add_column'",
                 "val": "input_table_name",
                 "options": {
                   "input_table_name": {
@@ -293,7 +293,7 @@
               "output.core_text": {
                 "type": "text",
                 "label": "Main Table Name",
-                "show_if": "output.compose_table_name==''true'' && output.core_rule==''custom''",
+                "show_if": "output.compose_table_name=='true' && output.core_rule=='custom'",
                 "required": true,
                 "minLength": 1,
                 "maxLength": 31,
@@ -302,14 +302,14 @@
               "output.suffix_delimiter": {
                 "type": "text",
                 "label": "Delimiter",
-                "show_if": "output.compose_table_name==''true''",
+                "show_if": "output.compose_table_name=='true'",
                 "val": "_",
                 "width": "50px"
               },
               "output.suffix_rule": {
                 "type": "select",
                 "label": "Suffix",
-                "show_if": "output.compose_table_name==''true''",
+                "show_if": "output.compose_table_name=='true'",
                 "val": "script_name",
                 "options": {
                   "empty": {
@@ -338,7 +338,7 @@
               "output.suffix_text": {
                 "type": "text",
                 "label": "Suffix Text",
-                "show_if": "output.compose_table_name==''true'' && output.suffix_rule==''custom''",
+                "show_if": "output.compose_table_name=='true' && output.suffix_rule=='custom'",
                 "minLength": 1,
                 "maxLength": 31,
                 "val": "",
@@ -347,7 +347,7 @@
               "output.timezone": {
                 "type": "select",
                 "label": "Timezone",
-                "show_if": "output.compose_table_name==''true'' && (output.prefix_rule==''date_string_type1'' || output.prefix_rule==''date_string_type2'' || output.prefix_rule==''time_string'' || output.prefix_rule==''datetime_string'' || output.suffix_rule==''date_string_type1'' || output.suffix_rule==''date_string_type2'' || output.suffix_rule==''time_string'' || output.suffix_rule==''datetime_string'')",
+                "show_if": "output.compose_table_name=='true' && (output.prefix_rule=='date_string_type1' || output.prefix_rule=='date_string_type2' || output.prefix_rule=='time_string' || output.prefix_rule=='datetime_string' || output.suffix_rule=='date_string_type1' || output.suffix_rule=='date_string_type2' || output.suffix_rule=='time_string' || output.suffix_rule=='datetime_string')",
                 "val": "Europe/Berlin",
                 "required": true,
                 "options": {
@@ -505,7 +505,7 @@
               "output.tag_name": {
                 "type": "text",
                 "label": "Tag Name",
-                "show_if": "output.add_tag==''true''",
+                "show_if": "output.add_tag=='true'",
                 "required": true,
                 "minLength": 1,
                 "maxLength": 255,
