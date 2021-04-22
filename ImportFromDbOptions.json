@@ -37,7 +37,7 @@
           "options.postgresql_credential.user": {
             "type": "text",
             "label": "User",
-            "show_if": "options.dbms==''postgresql''",
+            "show_if": "options.dbms=='postgresql'",
             "required": true,
             "width": "100%",
             "breakLine": true
@@ -45,7 +45,7 @@
           "options.postgresql_credential.password": {
             "type": "text",
             "label": "Password",
-            "show_if": "options.dbms==''postgresql''",
+            "show_if": "options.dbms=='postgresql'",
             "required": true,
             "width": "100%",
             "breakLine": true
@@ -53,7 +53,7 @@
           "options.postgresql_credential.host": {
             "type": "text",
             "label": "Host",
-            "show_if": "options.dbms==''postgresql''",
+            "show_if": "options.dbms=='postgresql'",
             "required": true,
             "width": "100%",
             "breakLine": true
@@ -61,7 +61,7 @@
           "options.postgresql_credential.database": {
             "type": "text",
             "label": "Database",
-            "show_if": "options.dbms==''postgresql''",
+            "show_if": "options.dbms=='postgresql'",
             "required": true,
             "width": "100%",
             "breakLine": true
@@ -71,7 +71,7 @@
       "options.schema_name_to_import": {
         "type": "text",
         "label": "Schema name that includes table to import",
-        "show_if": "options.dbms==''postgresql''",
+        "show_if": "options.dbms=='postgresql'",
         "required": true,
         "val": "public",
         "width": "100%",
@@ -80,7 +80,7 @@
       "options.table_name_to_import": {
         "type": "text",
         "label": "Table name to import",
-        "show_if": "options.dbms==''postgresql''",
+        "show_if": "options.dbms=='postgresql'",
         "required": true,
         "width": "100%",
         "breakLine": true
