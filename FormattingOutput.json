@@ -2,13 +2,13 @@
   "output": {
     "type": "fieldset",
     "label": "Define Output Table",
-    "show_if": "create_new_table==''true''",
+    "show_if": "create_new_table=='true'",
     "repeat": false,
     "fields": {
       "output.custom_text": {
         "type": "text",
         "label": "Output Table Name",
-        "show_if": "(output.set_options==''true'' && output.compose_table_name==''false'') || output.set_options==''false'')",
+        "show_if": "(output.set_options=='true' && output.compose_table_name=='false') || output.set_options=='false')",
         "minLength": 1,
         "val": "",
         "width": "100%",
@@ -24,7 +24,7 @@
       "output_options_box": {
         "type": "fieldset",
         "label": "Output Options",
-        "show_if": "output.set_options==''true''",
+        "show_if": "output.set_options=='true'",
         "repeat": false,
         "fields": {
           "output.compose_table_name": {
@@ -38,13 +38,13 @@
           "compose_table_name_frame": {
             "type": "fieldset",
             "label": "Compose Output Table Name",
-            "show_if": "output.compose_table_name==''true''",
+            "show_if": "output.compose_table_name=='true'",
             "repeat": false,
             "fields": {
               "output.prefix_rule": {
                 "type": "select",
                 "label": "Prefix",
-                "show_if": "output.compose_table_name==''true''",
+                "show_if": "output.compose_table_name=='true'",
                 "val": "empty",
                 "options": {
                   "empty": {
@@ -73,7 +73,7 @@
               "output.prefix_text": {
                 "type": "text",
                 "label": "Prefix Text",
-                "show_if": "output.compose_table_name==''true'' && output.prefix_rule==''custom''",
+                "show_if": "output.compose_table_name=='true' && output.prefix_rule=='custom'",
                 "minLength": 1,
                 "maxLength": 31,
                 "val": ""
@@ -81,14 +81,14 @@
               "output.core_delimiter": {
                 "type": "text",
                 "label": "Delimiter",
-                "show_if": "output.compose_table_name==''true'' && output.prefix_rule!=''empty''",
+                "show_if": "output.compose_table_name=='true' && output.prefix_rule!='empty'",
                 "val": "_",
                 "width": "50px"
               },
               "output.core_rule": {
                 "type": "select",
                 "label": "Table Name",
-                "show_if": "output.compose_table_name==''true''",
+                "show_if": "output.compose_table_name=='true'",
                 "val": "input_table_name",
                 "options": {
                   "input_table_name": {
@@ -105,7 +105,7 @@
               "output.core_text": {
                 "type": "text",
                 "label": "Main Table Name",
-                "show_if": "output.compose_table_name==''true'' && output.core_rule==''custom''",
+                "show_if": "output.compose_table_name=='true' && output.core_rule=='custom'",
                 "required": true,
                 "minLength": 1,
                 "maxLength": 31,
@@ -114,14 +114,14 @@
               "output.suffix_delimiter": {
                 "type": "text",
                 "label": "Delimiter",
-                "show_if": "output.compose_table_name==''true''",
+                "show_if": "output.compose_table_name=='true'",
                 "val": "_",
                 "width": "50px"
               },
               "output.suffix_rule": {
                 "type": "select",
                 "label": "Suffix",
-                "show_if": "output.compose_table_name==''true''",
+                "show_if": "output.compose_table_name=='true'",
                 "val": "script_name",
                 "options": {
                   "empty": {
@@ -150,7 +150,7 @@
               "output.suffix_text": {
                 "type": "text",
                 "label": "Suffix Text",
-                "show_if": "output.compose_table_name==''true'' && output.suffix_rule==''custom''",
+                "show_if": "output.compose_table_name=='true' && output.suffix_rule=='custom'",
                 "minLength": 1,
                 "maxLength": 31,
                 "val": "",
@@ -159,7 +159,7 @@
               "output.timezone": {
                 "type": "select",
                 "label": "Timezone",
-                "show_if": "output.compose_table_name==''true'' && (output.prefix_rule==''date_string_type1'' || output.prefix_rule==''date_string_type2'' || output.prefix_rule==''time_string'' || output.prefix_rule==''datetime_string'' || output.suffix_rule==''date_string_type1'' || output.suffix_rule==''date_string_type2'' || output.suffix_rule==''time_string'' || output.suffix_rule==''datetime_string'')",
+                "show_if": "output.compose_table_name=='true' && (output.prefix_rule=='date_string_type1' || output.prefix_rule=='date_string_type2' || output.prefix_rule=='time_string' || output.prefix_rule=='datetime_string' || output.suffix_rule=='date_string_type1' || output.suffix_rule=='date_string_type2' || output.suffix_rule=='time_string' || output.suffix_rule=='datetime_string')",
                 "val": "Europe/Berlin",
                 "required": true,
                 "options": {
@@ -317,7 +317,7 @@
               "output.tag_name": {
                 "type": "text",
                 "label": "Tag Name",
-                "show_if": "output.add_tag==''true''",
+                "show_if": "output.add_tag=='true'",
                 "required": true,
                 "minLength": 1,
                 "maxLength": 255,
