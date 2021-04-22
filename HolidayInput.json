@@ -1,5 +1,4 @@
-
-      "is_word": {{
+{
   "input": {
     "type": "fieldset",
     "label": "Select Input Table",
@@ -8,7 +7,7 @@
       "input_table": {
         "type": "select",
         "label": "Select Table",
-        "show_if": "options.is_generate_holiday_table==''add_column''",
+        "show_if": "options.is_generate_holiday_table=='add_column'",
         "bind": "TABLES",
         "empty": "",
         "required": true
@@ -17,6 +16,7 @@
         "type": "hidden",
         "val": "false"
       },
+      "is_word": {
         "type": "hidden",
         "val": "false"
       },
