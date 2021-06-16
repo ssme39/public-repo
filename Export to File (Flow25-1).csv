@@ -1,0 +1,72 @@
+File Name,Paragraph,Word,Non-Word
+AddColumnOptions.json,1,"xxx
+name",: '  
+AddColumnOptions.json,1,yyy,"  '
+"
+AddColumnOptions.json,1,name, :
+AddColumnOptions.json,1,"xxx
+aname",: 
+AddColumnOptions.json,1,"xxxy
+a",{
+AddColumnOptions.json,1,xxx,}
+AddColumnOptions.json,1,"y
+name",:'
+AddColumnOptions.json,1,xxx,"'
+"
+AddColumnOptions.json,1,name,": "" '  "
+AddColumnOptions.json,1,xxx," ' ""
+"
+AddColumnOptions.json,1,name,": ""  "
+AddColumnOptions.json,1,xxx,"  ""
+<"
+AddColumnOptions.json,1,tag,">"""
+AddColumnOptions.json,1,xxx,"  "" </"
+AddColumnOptions.json,1,tag,">
+<"
+AddColumnOptions.json,1,tag,>
+AddColumnOptions.json,1,xxx,   </
+AddColumnOptions.json,1,tag,">
+<"
+AddColumnOptions.json,1,tag,>´
+AddColumnOptions.json,1,xxx,  ´ </
+AddColumnOptions.json,1,tag,">
+<"
+AddColumnOptions.json,1,tag,> `
+AddColumnOptions.json,1,xxx, `  </
+AddColumnOptions.json,1,tag,">
+<"
+AddColumnOptions.json,1,tag,>`
+AddColumnOptions.json,1,xxx,`</
+AddColumnOptions.json,1,tag,">
+"
+AddColumnOptions.json,1,ad,{ 
+AddColumnOptions.json,1,yyy,  }
+AddColumnOptions.json,1,"cd
+ab", {
+AddColumnOptions.json,1,yyy,}
+AddColumnOptions.json,1,"sd
+ds",{'
+AddColumnOptions.json,1,yyy, '  }
+AddColumnOptions.json,1,"ds
+as", {'
+AddColumnOptions.json,1,yyy,'}
+AddColumnOptions.json,1,"add
+a"," ,"
+AddColumnOptions.json,1,xxx,", "
+AddColumnOptions.json,1,axxxsdf,(
+AddColumnOptions.json,1,xxx,", "
+AddColumnOptions.json,1,yyy,", "
+AddColumnOptions.json,1,xxx,", "
+AddColumnOptions.json,1,zzz,", "
+AddColumnOptions.json,1,xxx, ) { 
+AddColumnOptions.json,1,xxx,=
+AddColumnOptions.json,1,xxx,*
+AddColumnOptions.json,1,2,; } 
+AddColumnOptions.json,1,fdfgsdff,( 
+AddColumnOptions.json,1,yyy,", "
+AddColumnOptions.json,1,xxx,", "
+AddColumnOptions.json,1,zzz,", "
+AddColumnOptions.json,1,xxx, ) {
+AddColumnOptions.json,1,y,=
+AddColumnOptions.json,1,xxx,*
+AddColumnOptions.json,1,2,; }
