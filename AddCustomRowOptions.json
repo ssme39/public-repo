@@ -1,1 +1,5 @@
-hinzufügen
+{
+  "options_box": {
+    "": "",
+    "label": "Options",
+    "repeat": false,
