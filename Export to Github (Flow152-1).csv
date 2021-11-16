@@ -1,26 +1,2 @@
 Document,List Name,List Item,Field Name,Field Value
 Cover Letter,Item,,letter_date,29.06.2021
-Cover Letter,Item,,sender_name,My Company ltd.
-Cover Letter,Item,,sender_department,Purchase department
-Cover Letter,Item,,sender_street,Main street 21
-Cover Letter,Item,,sender_zip_code,80000
-Cover Letter,Item,,sender_city,München
-Cover Letter,Item,,sender_registry_number,HRB 334543
-Cover Letter,Item,,sender_registry_court,Frankfurt am Main
-Cover Letter,Item,,sender_representatives,Dr. Joe Johnson
-Cover Letter,Item,,sender_representative_type,Geschäftsführer
-Cover Letter,Item,,sender_bank,Deutsche Bank_
-Cover Letter,Item,,sender_bank_iban,XXX
-Cover Letter,Item,,sender_bank_bic,XXX
-Cover Letter,Item,,sender_bank_account_no,XXX
-Cover Letter,Item,,recipient_number,54321
-Cover Letter,Item,,recipient_name,My Company Ltd.
-Cover Letter,Item,,recipient_department,purchase department
-Cover Letter,Item,,recipient_street,Main street 21
-Cover Letter,Item,,recipient_zip_code,80000
-Cover Letter,Item,,recipient_city,München
-Cover Letter,Item,,subject,Mein Betreff
-Cover Letter,Item,,footer,Vielen Dank!
-Cover Letter,Item,,reference,eK2-762-24/vfs
-Cover Letter,Item,,sender_claim,my claim
-Cover Letter,paragraph,1,text,My Text
