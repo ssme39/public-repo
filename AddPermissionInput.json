@@ -1,2 +1,2 @@
-name:xname:xyname:xyz
-name :xname: xyname : xyz
+name:xyname:"x12"yname:"xy"z
+name :xyname: "x12"yname : "xy"z1name:"xy12"z
